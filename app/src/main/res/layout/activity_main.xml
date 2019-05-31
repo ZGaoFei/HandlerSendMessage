@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_click_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同一个线程点击发送消息"/>
+
+    <Button
+        android:id="@+id/bt_click_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他线程发送消息，主线程接收"/>
+
+    <Button
+        android:id="@+id/bt_click_other_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主线程发消息，其他线程接收"/>
+
+    <Button
+        android:id="@+id/bt_click_handler_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用系统HandlerThread实现其他线程接收"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="接收消息"/>
+
+</LinearLayout>
